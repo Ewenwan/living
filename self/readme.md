@@ -1,6 +1,11 @@
 # 1. 自己 
 
 ## A. 技能习得
+[中国国家图书馆](http://www.nlc.gov.cn/)
+
+[国图公开课 各种文化经典学术](http://open.nlc.cn/onlineedu/client/index.htm)
+
+
 ### 阅读
 ### 专业知识
 ### 哲学
