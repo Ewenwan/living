@@ -5,6 +5,7 @@
 
 [国图公开课 各种文化经典学术](http://open.nlc.cn/onlineedu/client/index.htm)
 
+[各种书籍 阅历](https://github.com/Ewenwan/books)
 
 ### 阅读
 ### 专业知识
