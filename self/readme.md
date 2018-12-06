@@ -12,6 +12,8 @@
 
 [英语视听美剧学习](http://www.xoolee.com/)
 
+[可能是让你受益匪浅的英语进阶指南](https://github.com/Ewenwan/English-level-up-tips-for-Chinese)
+
 ### 哲学
 ### 史学
 ### 生命学
