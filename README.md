@@ -16,6 +16,7 @@ G->地理
 B->生物
 I->信竞 等资料 ](https://github.com/Ewenwan/School)
 
+[各种专业书籍源码](https://github.com/PacktPublishing)
 
 ### 哲学
 ### 史学
