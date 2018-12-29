@@ -18,10 +18,14 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 
 [各种专业书籍源码](https://github.com/PacktPublishing)
 
+
 ### 哲学
 ### 史学
 ### 生命学
 ### 传统文化
+### 文学
+[华中师范大学公开课：走近大诗人系列 戴建业教授](http://open.163.com/movie/2018/11/5/H/MDUMJLOAP_MDUTNIS5H.html)
+
 
 ## B. 兴趣培养
 ### 游泳
