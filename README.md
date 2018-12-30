@@ -35,6 +35,8 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 ### 
 ## C. 品德养成
 
+[道德楷模与政治教化---戴建业](https://github.com/Ewenwan/living/blob/master/self/%E9%81%93%E5%BE%B7%E6%A5%B7%E6%A8%A1%E4%B8%8E%E6%94%BF%E6%B2%BB%E6%95%99%E5%8C%96.md)
+
 ## D. 社交技能
 
 ## E. 恋爱能力
