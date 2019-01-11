@@ -19,6 +19,15 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 [各种专业书籍源码](https://github.com/PacktPublishing)
 
 [专业书籍 中文 源码在线 教程 !!!](https://www.ctolib.com/python/docs/null.html)
+### 科学
+[1 卫报](https://www.theguardian.com/science)
+[2 史密森杂志](https://www.si.edu/)
+[3 大西洋月刊](https://www.theatlantic.com/)
+[4 国家地理](https://www.nationalgeographic.com/)
+[5 自然杂志](https://www.nature.com/)
+[6 Quanta杂志 ](https://www.quantamagazine.org/)
+[]()
+[]()
 
 ### 哲学
 ### 史学
