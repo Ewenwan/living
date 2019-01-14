@@ -26,7 +26,7 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 [4 国家地理](https://www.nationalgeographic.com/)
 [5 自然杂志](https://www.nature.com/)
 [6 Quanta杂志 ](https://www.quantamagazine.org/)
-[]()
+[7 科学planets话题](http://www.sciencemag.org/topic/planets)
 []()
 
 ### 哲学
