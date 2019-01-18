@@ -3,6 +3,9 @@
     
     网页在线版 https://scratch.mit.edu/projects/editor/?tutorial=getStarted
     
+             Scratch3 Lab, https://scratch3.codelab.club/
+             万物积木化scratch3_adapter https://scratch3-adapter-docs.just4fun.site/user_guide/install/
+             
     github源码仓库 https://github.com/LLK/scratch-blocks
     
     
@@ -171,4 +174,32 @@ while True:
     小学用Scratch2学习简单编程，中学用Python学习简单编程，大学用Python和C++学习复杂机器人编程，无缝衔接。
     
     
-     
+##  万物积木化scratch3_adapter 插件系统
+![](http://wwj-tmp-video2.just4fun.site/%E6%8F%92%E4%BB%B6%E7%B3%BB%E7%BB%9F.png)
+
+
+    Scratch3 Lab, https://scratch3.codelab.club/
+    万物积木化scratch3_adapter, https://scratch3-adapter-docs.just4fun.site/user_guide/install/
+    
+    步骤1: 打开Scratch3 Lab
+    步骤2: 打开scratch3_adapter
+           双击打开scratch3-adapter
+           scratch3-adapter启动之后，
+           可以看到Scratch3 Lab指示灯显示绿色,代表连接成功
+    步骤3: 连接micro:bit，加载插件
+          使用数据线将micro:bit接入电脑，下载usbMicrobit_0_2.hex并拖入micro:bit中
+          ps: Windows7用户注意(Mac和Windows10用户可以跳过),为了能发现并连接micro:bit，
+               需要安装驱动(和使用mu-editor操作相同)
+               
+    完成后在scratch3_adapter中点击加载micro:bit插件
+    
+    步骤4: 打印hello world
+        现在让我们利用Scratch3 Lab控制micro:bit，让它在点阵屏上打印hello world
+        选择对应的scratch3插件:Microbit_cx(我们同时制作了若干中micro:bit，包括使用web蓝牙的)
+
+
+
+           
+           
+    
+    
