@@ -176,7 +176,24 @@ while True:
     
 ##  万物积木化scratch3_adapter 插件系统
 ![](http://wwj-tmp-video2.just4fun.site/%E6%8F%92%E4%BB%B6%E7%B3%BB%E7%BB%9F.png)
+    
+[scratch 连接 Cozmo ](https://scratch3-adapter-docs.just4fun.site/extension_guide/cozmo/)
 
+[cozmo系列之入门 - 有性格且可编程的机器人](https://blog.just4fun.site/cozmo-hello-world.html)
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+BB8可爱且呆，cozmo可爱又任性
+
+![](http://wwj-fig-bed.just4fun.site/cozmo1a05d914.png)
 
     Scratch3 Lab, https://scratch3.codelab.club/
     万物积木化scratch3_adapter, https://scratch3-adapter-docs.just4fun.site/user_guide/install/
