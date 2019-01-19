@@ -8,6 +8,7 @@
              
     github源码仓库 https://github.com/LLK/scratch-blocks
     
+    scratch视频教程 http://www.kidscode.cn/python
     
 ## 与 python语言的交互
     scratch是一款又麻省理工开发的图形化编程软件，
