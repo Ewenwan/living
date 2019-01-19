@@ -69,6 +69,11 @@
     11.2. 读取加速度大小
     11.3. 用Microbit做一个量角器
 
-
-
 ## 高级
+[ 与孩子一起学编程 ](https://github.com/Ewenwan/python.Hello-World-Computer-Programming-for-Kids-and-Other-Beginners)
+
+中文书籍 链接：https://pan.baidu.com/s/1ZtNMKep-Zl62hKN18HzWUw 提取码：70us 
+
+
+
+
