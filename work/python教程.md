@@ -69,7 +69,28 @@
     11.2. 读取加速度大小
     11.3. 用Microbit做一个量角器
 
-## 高级
+## 编程猫 可视化python编程
+
+    编程猫在线体验地址：  https://wood.codemao.cn/
+    本地编辑器客户端下载：https://python.codemao.cn/
+    
+    支持在线运行的库包括：
+        math             数学运算库
+        random           随机数模块
+        turtle           小乌龟
+        time (partial)   时间模块
+        random (partial)
+        urllib (partial)
+        unittest
+        image            图像模块
+        DOM (partial)
+        re (partial)
+    除此之外，如果想运行其他的库，也可以下载安装PC客户端“海龟编辑器”，本地运行Python3！
+ 
+
+
+
+## 高级 代码编程
 [ 与孩子一起学编程 ](https://github.com/Ewenwan/python.Hello-World-Computer-Programming-for-Kids-and-Other-Beginners)
 
 中文书籍 链接：https://pan.baidu.com/s/1ZtNMKep-Zl62hKN18HzWUw 提取码：70us 
