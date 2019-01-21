@@ -643,22 +643,22 @@ for friend in friends
     
 ```python
 >>> eng2sp = dict()
->>> print eng2sp
+>>> print(eng2sp)
 {}
 # 大括号{}, 代表空字典。向字典中添加一个项，可以使用方括号：
 >>> eng2sp['one'] = 'uno'
 # 这行代码创建了一个从关键字'one' 到值'uno' 的映射。
 # 如果再次输出字典, 可以看到关键字－值对，和他们之间的冒号：
->>> print eng2sp
+>>> print(eng2sp)
 {'one': 'uno'}
 # 上面输出的格式，也是输入格式。比如，可以创建一个拥有三项的字典：
 >>> eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
 # 但是如果输出 eng2sp, 你可能会感到惊讶：
->>> print eng2sp
+>>> print(eng2sp)
 {'one': 'uno', 'three': 'tres', 'two': 'dos'} 
 # 顺序变了，一般来说，字典项的顺序是随机的。
 # 因为字典的元素是不是通过索引来获取的。可以使用关键字来查询对应的值。
->>> print eng2sp['two']
+>>> print(eng2sp['two'])
 'dos'
 # 关键字'two' 总是对应值'dos', 所以项的顺序没有什么关系。
 
@@ -666,7 +666,7 @@ for friend in friends
 >>> len(eng2sp)
 3
 
-# 英文单词的  26个字母统计  直方图统计 
+# 英文单词的  26个字母统计  直方图统计 =======
 def histogram(s):
     d = dict()
     for c in s:
@@ -677,12 +677,37 @@ def histogram(s):
     return d
     
 >>> h = histogram('brontosaurus')
->>> print h
+>>> print(h)
 {'a': 1, 'b': 1, 'o': 2, 'n': 1, 's': 2, 'r': 2, 'u': 2, 't': 1}
 
 ```
 
+# 元组 tuple
+    元组是一组序列的值。
+    元组中的值可以是任何数据类型，使用整数作为下标，
+    在这个方面元组很像列表。
+    但是一个主要的区别是元组是不可改变的。
+    
+```python
+>>> t = 'a', 'b', 'c', 'd', 'e'
+通常用括号包含元组，虽然这不是必要的：
+>>> t = ('a', 'b', 'c', 'd', 'e')
+要创建只含一个元素的元组，你需要包含最后的逗号：
+>>> t1 = 'a',
+>>> type(t1)
+<type 'tuple'>
+在括号中的值不是元组：
+>>> t2 = ('a')
+>>> type(t2)
+<type 'str'>
 
+创建元组的另一个方式是使用内置函数 tuple。
+当没有参数时，函数创建一个空的元组：
+>>> t = tuple()
+>>> print(t)
+()
+
+```
 
 # 函数---积木---魔法黑盒子---法宝---
     函数是带有函数名的一系列执行计算的语句, 
@@ -755,6 +780,11 @@ nonlocal非公非私
 
 
 # 对象  属性(外观、大小、颜色、味道) 方法(子功能、各个小的特技、技能)
+    Python 是一门面向对象的编程语言，意味着它提供很多特点支持面向对象编程。
+    1.程序由对象定义和函数定义组成，大多数的计算都在操作对象过程中进行。
+    2.每个对象定义都和现实世界的一些对象或者概念符合，
+        操作对象的函数和现实世界对象的交互方式相一致。
+    
 ```python
 class 对象类名字A:
     # 对象初始化函数，比如小明一生下来，有嘴巴、眼睛、耳朵等
@@ -766,7 +796,13 @@ class 对象类名字A:
     def
     ...
     
-    
+# 创建一个 Point 类型，代表二维空间的一个点。    
+# class Point:
+#    ...
+
+# 定义一个 Time 类，记录当前时间,小时，分钟，秒
+
+
 # 继承 父类的 特点---遗传----向父母学习---
 class B(A):
     ...
@@ -828,9 +864,107 @@ pygame.mixer  # 声音合成器，混音器
 >>>
 ```
 
-# 文件读写 txt bin   pickle存储列表数据
+# 文件读写 txt bin   pickle 存储列表数据
+    目前我们所见到的大多数的程序都是瞬态的，
+    即它们在短时间内运行并输出一些结果，当它们结束时，数据也就消失了。
+    如果你再次运行程序，它将从一个初始的状态开始。
+    
+    另一类程序被称为是持久的，它们长时间运行（或者时刻运行），
+    至少将一部分数据记录在永久储存设备（如硬盘）上，当程序关闭并重新启动时，
+    它们可以恢复结束前的状态以便继续运行。
+    
+    程序维护数据最简单的方法是读写文本文件。
+    我们已经接触过读取文本文件的程序，在本章中我们将接触写入文本文件的程序。
+    记录程序状态的另一个方式是使用数据库。
+    在本章节中我给出一个 简单的数据库 和 模块pickle，
+    该模块简化了存储数据的过程。
+    
 ```python
->>>
+# 要写入一个文件，你需要在打开文件时添加第二个参数'w'：
+>>> fout = open('output.txt', 'w')
+>>> print fout
+<open file 'output.txt', mode 'w' at 0xb7eb2410>
+
+# write 方法将数据写入文件。
+>>> line1 = "This here's the wattle,\n"
+>>> fout.write(line1)
+# 文件对象将跟踪位置，如果你再次调用 write，它将在尾部写入新的数据。
+>>> line2 = "the emblem of our land.\n"
+>>> fout.write(line2)
+# 当你完成写入，你可以关闭文件。
+>>> fout.close()
+
+# 当前路径
+>>> import os
+>>> cwd = os.getcwd() # cwd 代表“current working directory”，即当前工作路径
+>>> print cwd
+/home/dinsdale
+
+# 要得到一个文件的绝对目录，你可以使用 os.path.abspath：
+>>> os.path.abspath('memo.txt')
+'/home/dinsdale/memo.txt'
+
+# os.path.exists 检查一个文件或者目录是否存在：
+>>> os.path.exists('memo.txt')
+True
+
+# os.path.isdir 检查它是否是一个目录：
+>>> os.path.isdir('memo.txt')
+False
+>>> os.path.isdir('music')
+True
+
+# os.path.isfile 检查是否是一个文件。
+# os.listdir 返回给定目录下的文件（以及其他目录）：
+>>> os.listdir(cwd)
+['music', 'photos', 'memo.txt']
+
+
+# 数据库 
+# 数据库是用于存储数据的文件。大多数的数据库以字典的形式组织，即将键映射为值。
+# 数据库是保存在磁盘（或其他永久存储设备）上，因此即使程序结束它们仍然存在。
+# 模块 anydbm 提供了创建和跟新数据库文件的接口。
+打开数据库和其他文件类似：
+>>> import anydbm
+>>> db = anydbm.open('captions.db', 'c')
+模式'c' 代表如果文件不存在则创建文件。返回结果是一个数据库对象，它可以像字典一
+样被使用（对于大多数的操作）。如果你创建一个新的项目，anydbm 将更新数据库文件。
+>>> db['cleese.png'] = 'Photo of John Cleese.'
+当你访问某个项目是，anydbm 将读取文件：
+>>> print db['cleese.png']
+Photo of John Cleese.
+如果你对已有的键再次进行赋值，anydbm 将替代旧的值：
+>>> db['cleese.png'] = 'Photo of John Cleese doing a silly walk.'
+>>> print db['cleese.png']
+Photo of John Cleese doing a silly walk.
+许多字典的方法，如 keys 和 items，同样适用于数据库对象，包括使用 for 语句实现的
+迭代：
+for key in db:
+print key
+和其他文件一样，当你完成操作后你需要关闭文件：
+>>> db.close()
+
+
+# pickle 模块 能将任何类型的对象翻译成适合在数据库中储存的字符串，同时能将字符串还原成对象。
+pickle.dumps 读取一个对象作为参数，并返回一个表征字符串（dumps 是“dump string”（转储字符串）的缩写）：
+>>> import pickle
+>>> t = [1, 2, 3]
+>>> pickle.dumps(t)
+'(lp0\nI1\naI2\naI3\na.'
+
+这个格式对人类读者来说不是很好理解，但是对 pickle 来说很好解释。pickle.loads
+（“载入字符串”）可以重建对象：
+>>> t1 = [1, 2, 3]
+>>> s = pickle.dumps(t1)
+>>> t2 = pickle.loads(s)
+>>> print t2
+[1, 2, 3]
+虽然新的对象和老的对象有相同的值，它们（通常）不是同一个对象：
+>>> t1 == t2
+True
+>>> t1 is t2
+False
+
 ```
 
 
