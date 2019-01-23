@@ -341,12 +341,36 @@ printf("%d >= %b >= %d",a,b,c);
 // if() ...; else if() ...; else ...;
 
 
-
+// switch case语句=====
+https://blog.csdn.net/haishu_zheng/article/details/78334232
 
 
 // 二进制位 运算符 “与（&）”、“或（|）”、“异或（^）”
-https://blog.csdn.net/haishu_zheng/article/details/78334210
 
+https://blog.csdn.net/haishu_zheng/article/details/78334210
+switch case语句与if elseif语句类似，都是从多个选择条件里选取一个来执行。
+
+switch case的结构为:
+
+switch(表达式或变量或常量)
+{
+    case 条件1:
+        {
+            执行语句;
+            break; // “break;”表示中断，若忘了写，程序会继续执行下面的条件。
+        }
+    case 条件2:
+        {
+            执行语句;
+            break;
+        }
+    ……
+    default:
+        {
+            执行语句;
+            break;
+        }
+}
 
 
 ```
@@ -789,8 +813,10 @@ https://blog.csdn.net/haishu_zheng/article/details/78334221
     
 ## 指针，家庭住址，班级座位号，变量在计算机内部存储的 地址
 
-    https://blog.csdn.net/haishu_zheng/article/details/78334227
+     https://blog.csdn.net/haishu_zheng/article/details/78334227
     
+    二级指针与多级指针 
+     https://blog.csdn.net/haishu_zheng/article/details/82723314
     
 
 
