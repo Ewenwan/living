@@ -1,5 +1,8 @@
 # About Living 生存之道
 
+[周知集锦 编程 前端 后端 计算机 大数据 游戏 数据库 娱乐 商业 工作 ](https://github.com/Ewenwan/awesome)
+
+
 # 1. 自己 
 
 ## A. 技能习得
