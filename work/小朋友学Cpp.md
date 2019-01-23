@@ -1085,136 +1085,921 @@ Memory address of dog: 000000000022fe4f  // 在类外部运行的对象的内存
 ```
 
 
-## 
+## 封装 隐藏 绑定 藏起来
 ```cpp
+所有的 C++ 程序都有以下两个基本要素： 
+函数：这是程序中执行动作的部分，它们被称为函数或方法。 
+数据：数据是程序的信息，会受到程序函数的影响，也叫属性。
+
+封装是面向对象编程中的把数据和操作数据的函数绑定在一起的一个概念，这样能避免受到外界的干扰和误用，从而确保了安全。
+
+我们已经知道，类包含私有成员（private）、保护成员（protected）和公有成员（public）成员。
+默认情况下，所有的数据成员和函数成员都是私有的。 
+
+为了使类中的成员变成公有的（即程序中的类外部的其他部分也能访问），必须在这些成员前使用 public 关键字进行声明。
+所有定义在 public 标识符后边的属性或函数可以被程序中所有其他的函数访问。
+
+
+#include <iostream>
+using namespace std;
+
+class Adder{// 累加器
+   public:
+      // 构造函数
+      Adder(int i = 0)// 带默认参数值，构造函数的默认参数
+      {
+        total = i;
+      }
+      // 对外的接口
+      void addNum(int number)
+      {
+          total += number;// 加上一个数
+      }
+      // 对外的接口
+      int getTotal()
+      {
+          return total; // 返回累计的值
+      };
+   private:
+      // 对外隐藏的数据，外部不可访问，不过朋友可以访问(有元函数、有元类)
+      int total;
+};
+
+int main()
+{
+   Adder a;// total默认初始化为0
+
+   a.addNum(10);
+   a.addNum(20);
+   a.addNum(30);
+
+   cout << "Total is " << a.getTotal() << endl;
+   return 0;
+}
+ 
+运行结果：
+
+Total is 60
+
+上面的类把数字相加，并返回总和。公有成员 addNum 和 getTotal 是对外的接口，用户需要知道它们以便使用类。
+私有成员 total 是对外隐藏的（即被封装起来），用户不需要了解它，但它又是类能正常工作所必需的。
+
+类的设计策略： 
+通常而言，要把类的数据成员设计成私有（private），
+类的函数成员则根据实际需要设计成publice, protected或private。
 
 ```
 
 
 
-## 
+## protected继承 子承父业 改革创新 遗传 鼻子耳朵像爸爸 眼睛像妈妈 嘴巴有点变化
 ```cpp
+父类(基类) 具有一些 拓展类(继承类)的共性，
+可以定义一个父类，而一些具有不同特性的子类可以从父类继承过来。
+这个 定义一个 动物父类，大都具有叫、跑等功能，小狗，小猫可以从父类继承过来，再根据自身特点，创新
+
+
+#include <iostream>
+using namespace std;
+
+// 父类(基类) 动物类
+class Animal
+{
+protected:// 保护类型，可以被子类继承，如果为 private，则该属性不可被继承
+    float weight;// 体重
+    
+public:
+    void setWeight(float w) 
+    {// 设置体重
+        weight = w;
+    }
+
+    float getWeight()
+    {// 获取体重信息
+        return weight;
+    }
+    
+    // 呼吸
+    void breathe()
+    {
+        cout << "breathing..." << endl; 
+    }   
+};
+
+
+// 小狗 子类 继承父类 动物的一些属性和方法，并增添一些新方法
+class Dog : public Animal
+{
+private:// 注意为 私有 该类 的 该属性 不可再被继承
+    int legs;// 多 一个属性 腿的数量
+    
+public:
+    void setLegs(int number)
+    {// 也就相应多了 操作 腿属性的 函数方法
+        legs = number;  // 设置腿的数量
+    }
+
+    int getLegs()
+    {// 获取腿的数量
+        return legs;    
+    }
+    
+    // 犬吠，汪汪叫
+    void bark()
+    {
+        cout << "wang! wang!" << endl;
+    }   
+};
+
+int main(int argc, char** argv)
+{
+    Dog dog;
+    dog.setWeight(12.5);// 设定体重属性，继承自 动物类
+    dog.setLegs(4);     // 设定腿数量属性，子类 新增添的属性
+
+    cout << "The dog's weight is " << dog.getWeight() << "kg" << endl;// 重量
+    cout << "The dog has " << dog.getLegs() << " legs" << endl;       // 几条腿
+    dog.breathe(); // 呼吸
+    dog.bark();    // 犬吠
+
+    return 0;
+}
+运行结果：
+
+The dog’s weight is 12.5kg
+The dog has 4 legs
+breathing...
+wang! wang!
+
+程序分析： 
+1）Animal为一个类，Dog为另一个类。 
+   class Dog : public Animal 表示Dog类继承了 Animal类。
+   此时，Animal就成了Dog的基类或父类。Dog就成了Animal的派生类或子类。
+
+2）体重和呼吸是所有动物的共性，所以weight和breathe()定义在类Animal中。
+   腿和吠不是所有动物的共性，所以legs和bark()定义在了类Dog中。
+
+3）class Dog : public Animal , 这里的public表示继承方式 。 
+继承方式有三种：public, protected和private。 
+ a. 父类为private的属性和方法，不能被子类继承。 
+ b. 父类为protected的成员，若被子类public继承的，仍为子类的protected成员；
+    若被子类protected或private继承的，变为子类的private成员。 
+ c. 父类为public的成员，若被子类public继承的，仍为子类的public成员；
+    若被子类protected继承的，变为子类的protected成员；
+    若被子类private继承的，变为子类的private成员。
+
+注：这些不用强记，编多了自然就知道
+
+4）根据 3）中 第a条 的结论，若程序改为class Dog : protected Animal，则程序无法通过编译。
+   因为setWeight()和getWeight()被protected继承后，变为Dog的protected成员，
+   而protected成员，无法在类外部（比如main函数中）访问。
+
 
 ```
 
 
-## 
+## 构造函数的默认参数
 ```cpp
+构造函数的参数可以预先赋一个初值，
+其作用是：在构造函数被调用时，省略部分或全部参数，这时就会使用默认参数代替实参。
+
+#include <iostream>
+using namespace std;
+
+// 长方形类====
+class Rectangle
+{
+private:// 私有属性，不可继承
+    int width;  // 宽
+    int height; // 高
+    
+public:
+    Rectangle(int w = 0, int h = 0)// 带默认参数的 有参构造函数
+    {
+        cout << "Constructor method is invoked!" << endl;
+        width = w;
+        height = h;
+    }
+    
+    // 方法，计算并返回 长方形面积====
+    int area()
+    {
+        return width * height; 
+    }
+};
+
+int main(int argc, char** argv) 
+{
+    Rectangle rec1;//默认参数，实例化 长方形类对象         // 0*0=0
+    cout << "Area of rec1 is : " << rec1.area() << endl;
+
+    Rectangle rec2(5);// 1个传入参数，1个默认参数，实例化 长方形类对象 // 5*0=0
+                      // 传入实参5，相当于传入（5，0）
+    cout << "Area of rec2 is : " << rec2.area() << endl;
+
+    Rectangle rec3(5, 10);// 2个传入参数，实例化 长方形类对象   // 5*10 =50
+    cout << "Area of rec3 is : " << rec3.area() << endl;
+
+    return 0;   
+}
+
+运行结果：
+
+Constructor method is invoked!
+Area of rec1 is : 0
+Constructor method is invoked!
+Area of rec2 is : 0
+Constructor method is invoked!
+Area of rec3 is : 50
+
+
 
 ```
 
 
 
-## 
+## 子类构造函数调用父类构造函数
 ```cpp
+从哲学层面来看，子类会继承父类除private以外的所有成员。 
+因为构造函数是公有的，所以理所当然地会被子类继承。
 
+#include <iostream>
+using namespace std;
+
+class Shape // 形状基类
+{
+public:
+    Shape() 
+    {
+        cout << "Shape's constructor method is invoked!\n";
+    }
+};
+
+// 长方形 公开 继承 自 形状类
+class Rectangle : public Shape
+{
+public:
+    // 长方形类 构造函数 显示 调用 基类 的 构造函数
+      // 这是先调用父类的构造函数，再执行它本身的语句
+    Rectangle() : Shape()
+    {
+        cout << "Rectangle's constructor method is invoked!\n" << endl;
+    }
+};
+
+int main(int argc, char** argv) 
+{
+    Rectangle rec;
+
+    return 0;   
+}
+
+运行结果：
+
+Shape's constructor method is invoked!
+Rectangle's constructor method is invoked!
+
+就算 子类 的 构造函数 不显示 调用 父类的 构造函数
+在构造子类时，父类的 构造函数也会被执行，
+并且调用顺序优先于子类本身的构造函数。
+    Rectangle()
+    {
+        cout << "Rectangle's constructor method is invoked!\n" << endl;
+    }
+    
+    
 ```
 
 
 
-## 
+## 箭头解引用 调用对象的方法、属性等
 ```cpp
+#include <iostream>
+using namespace std;
 
-```
+class A
+{
+public:
+    void play() // 玩
+    {
+        cout << "playing..." << endl;
+    }
+};
 
+int main()
+{
+    A a; // 实例化A类的一个对象a
+    a.play(); // 对象a .号直接调用 类方法
 
+    A *p = &a; // 定义对象指针
+    
+    (*p).play();// *号解引用 后 得到对象 再使用 .号访问类方法
+    p->play();  // 直接使用 -> 箭头 对 对象的指针 进行调用
 
+    return 0;
+}
+运行结果：
 
-## 
-```cpp
-
-```
-
-
-
-
-## 
-```cpp
-
-```
-
-
-
-## 
-```cpp
-
-```
-
-
-
-## 
-```cpp
-
-```
+playing...
+playing...
+playing...
 
 
+结论： 
+在C++中， 
+若是普通对象，使用点号操作符； 
+若是指针对象，有两种操作方式：
 
-## 
-```cpp
+1.  (*指针).方法()        （1）
+2.  指针-->方法()         （2）
 
-```
-
-
-
-## 
-```cpp
-
-```
-
-
-
-
-## 
-```cpp
-
-```
-
-
-
-
-## 
-```cpp
-
-```
-
-
-
-
-## 
-```cpp
-
-```
-
-
-
-
-## 
-```cpp
-
-```
-
-
-
-
-## 
-```cpp
-
-```
-
-
-
-
-## 
-```cpp
+但是 1 不常用，所以 2 中的箭头操作符用的比较多。
 
 ```
 
 
 
 
-## 
+## 多态，父类指向不同的子类时，会有不同的表现，父亲让不同的孩子做事情，会产生不同的结果
+```cpp
+#include <iostream> 
+using namespace std;
+
+// 父类 形状
+class Shape
+{
+   protected: // 保护类型，可被继承
+      int width, height;
+
+   public:
+      Shape( int a = 0, int b = 0)// 带默认参数的 有参构造函数
+      {
+         width = a;
+         height = b;
+      }
+      
+      // 虚函数 面积，可以被 子类的同名函数覆盖
+      virtual int area()
+      {
+         cout << "Parent class area :" <<endl;// 只打印，未计算真实面积
+         return 0;
+      }
+};
+
+// 子类1：长方形，公开继承自 形状类 Shape====
+class Rectangle: public Shape
+{
+   public:
+      Rectangle( int a = 0, int b = 0)  
+      { // 构造函数 沿用 父类的 构造函数
+      }
+
+      int area ()
+      { 
+      // 该 面积函数 会覆盖 父类 的面积函数
+         cout << "Rectangle class area :" <<endl;
+         return (width * height); // 矩形面积 = 宽*高
+      }
+};
+
+
+// 子类2：三角形，公开继承自 形状类 Shape====
+class Triangle: public Shape
+{
+   public:
+      // 三角形类 构造函数，显示调用 父类 的构造函数
+      Triangle( int a=0, int b=0) : Shape(a, b) { }
+
+      int area ()
+      {  // 该 面积函数 会覆盖 父类 的面积函数
+         cout << "Triangle class area :" <<endl;
+         return (width * height / 2); // 三角形面积，宽*高/2
+      }
+};
+
+
+int main( )
+{
+   Shape *shape;// 父类，基类 指针，空
+   Rectangle rec(10,7);// 子类 长方形类 实例化对象
+   Triangle  tri(10,5);// 三角形
+
+   // 存储矩形的地址
+   shape = &rec;// 指向 子类1 长方形类实例对象
+   // 调用矩形 的求面积函数 area
+   shape->area();
+
+   // 存储三角形的地址
+   shape = &tri;// 指向 子类2 长方形类实例对象
+   // 调用三角形 的求面积函数 area
+   shape->area();
+
+   return 0;
+}
+
+运行结果：
+Rectangle class area :
+Triangle class area :
+
+如果 父类的 面积函数不加 virtual
+运行结果：
+Parent class area :
+Parent class area :
+
+程序分析： 
+1）虚函数 
+   虚函数是在基类中使用关键字 virtual 声明的函数。
+   在派生类中重新定义基类中定义的虚函数时，会告诉编译器不要静态链接到该函数。 
+   我们想要的是在程序中任意点可以根据所调用的对象类型来选择调用的函数，这种操作被称为动态链接，或后期绑定。 
+   虚函数是C++中用于实现多态(polymorphism)的机制。核心理念就是通过基类访问派生类定义的函数。 
+2）此时，编译器看的是指针的内容，而不是它的类型。
+   因此，由于 tri 和 rec 类的对象的地址存储在 *shape 中，所以会调用各自的 area() 函数。 
+   正如您所看到的，每个子类都有一个函数 area() 的独立实现。这就是多态的一般使用方式。
+   有了多态，您可以有多个不同的类，都带有同一个名称但具有不同实现的函数。
+
+
+```
+
+
+
+
+## 引用 & 
+```cpp
+一）C语言中的“&”
+在C语言里，我们碰到过“&”这个符号。
+“&”的使用场景有两种： 
+
+1）位运算符
+int a = 5;
+int b = 10;
+int c = a & b;
+
+2）取地址符
+int a;
+scanf("%d", &a);
+
+二）C++语言中的“&”
+在C++里，“&”的使用场景有三种： 
+1）位运算符，这在C, C++, Java等语言中，都是一样的
+
+2）取地址符，这是因为C++兼容了C
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a;
+    printf("Input a = ");
+    scanf("%d", &a);
+    printf("a = %d", a);
+
+    return 0;
+}
+
+3）作为引用 
+这是C++中加入的新语言特性。 
+所谓引用，就是变量的别名。 
+比如有一个人叫做小明，他有一个外号叫做“明明”，那么“明明”就是小明的引用。
+别人说“小明”或明明，说的都是同一个人。
+
+引用的语法为：类型 &引用名 = 变量名 
+比如
+
+int a;
+int &ra = a; 
+操作引用，就是操作变量本身。 
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a; 
+    int &ra = a;
+    ra = 1;
+
+    printf("Memory address of ra: %d\n", &ra);
+    printf("Memory address of a: %d\n", &a);
+    printf("ra = %d\n", ra);
+    printf("a = %d\n", a);
+
+    return 0;
+}
+
+运行结果：
+
+Memory address of ra: 2293316
+Memory address of a: 2293316
+ra = 1 
+a = 1
+
+可见，ra和a的内存地址是一样的，值自然也一样。ra和a实际上是同一回事。
+
+```
+
+
+
+##  使用引用 实现两数交换的函数
+```cpp
+之前学C语言的时候，咱们直接在main函数中使用“异或”位运算符，很容易实现了两数交换。 
+本节课将在此基础上，把交换两个数的算法，封装到swap函数中。
+这样不管是哪个地方想要交换两个数，调用swap函数就可以了。
+
+#include <iostream>
+using namespace std;
+
+void swap(int &m, int &n) // 注意这里为 引用形参
+                          // 也就是 直接使用 传递给函数的 参数，
+{
+    cout << "Memory address of m: " << &m << endl;
+    cout << "Memory address of n: " << &n << endl;
+
+    cout << "\nBefore Swap:" << endl;
+    cout << "m = " << m << endl;
+    cout << "n = " << n << endl;
+    
+    // 使用 3次 “异或”位运算符 完成两个数的交换
+    m ^= n;
+    n ^= m;
+    m ^= n;
+
+    cout << "\nAfter Swap:" << endl;
+    cout << "m = " << m << endl;
+    cout << "n = " << n << endl;    
+}
+
+int main(int argc, char** argv) 
+{
+    int a = 1;
+    int b = 2;
+
+    cout << "Memory address of a: " << &a << endl;
+    cout << "Memory address of b: " << &b << endl;  
+
+    swap(a, b);
+
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+
+    return 0;
+}
+
+运行结果：
+
+Memory address of a: 0x7fffd009de98
+Memory address of b: 0x7fffd009de9c
+Memory address of m: 0x7fffd009de98
+Memory address of n: 0x7fffd009de9c
+
+Before Swap:
+m = 1
+n = 2
+
+After Swap:
+m = 2
+n = 1
+a = 2
+b = 1
+
+使用引用后，达到了交换a和b的目的。
+这是因为形参m和n是实参a和b的引用，m和a是一回事，n和b是一回事。 
+交换m和n的值，就是交换a和b的值。
+
+
+如果：
+swap函数不使用引用 void swap(int m, int n){}，不会达到想要的效果。
+从结果可以看出，a和b调用swap之后，值并没对换过来。 
+其原因在于，形参m和n的作用域只是在 swap 函数内。
+在swap内，m = a = 1, n = b = 2，交换后m = 2, n = 1。
+但是，m和n的值并不会传回给a和b，导致a和b的值没有被对换。
+
+
+```
+
+
+
+## 多继承 
+```cpp
+单继承：子类（派生类）只能有一个父类（基类）。支持单继承的语言有Java, Objective-C, PHP, C#等。
+
+多继承：子类（派生类）可以有多个父类（基类）。支持多继承的语言有C++, Python等。
+
+举现实中的一个例子：农民工，既是农民，又是工人。所以农民工继承自农民和工人。
+
+#include <iostream>
+using namespace std;
+
+class Farmer  // 农民==
+{
+public:
+    Farmer()
+    {
+        cout << "I am a farmer" << endl;    
+    }   
+};
+
+class Worker // 工人
+{
+public:
+    Worker()
+    {
+        cout << "I am a worker" << endl;
+    }
+
+};
+
+// 农民工MigrantWorker 继承 自 工人 和 农民
+class MigrantWorker : public Farmer, public Worker
+// 实例化 子类对象时，会按照 继承父类的顺序 调用的父类的 构造函数
+{
+public:
+    MigrantWorker()
+    {
+        cout << "I am a migrant worker" << endl;
+    }
+};
+
+int main(int argc, char** argv) 
+{
+    MigrantWorker m;
+
+    return 0;
+}
+ 
+运行结果：
+
+I am a farmer    // 父类1 Farmer 类的 构造函数 会先被调用
+I am a worker    // 父类2 Worker 类的 构造函数 第二被调用
+I am a migrant worker // 子类 的构造函数最后 才被调用
+
+
+```
+
+
+## C++创建对象的3种方式
 ```cpp
 
+#include <iostream>
+using namespace std;
+
+class A
+{
+private:
+    int n;
+public:
+    A(int m)
+    {
+        n = m;
+        cout << "Constructor method is invoked!" << endl;   
+    }
+
+    void printNum()
+    {
+        cout << "n = " << n << endl;
+    }
+};
+
+int main()
+{
+    // 第一种 
+    A a1(1);            // 直接构造，a1在栈中 
+    a1.printNum();
+
+    // 第二种 
+    A a2 = A(2);        // 拷贝构造，a2在栈中 
+    a2.printNum();
+
+    // 第三种  动态分配
+    A *a3 = new A(3);   // a3所指的对象在堆中，但是a3本身放在栈中 
+    a3->printNum();
+    
+    delete a3; // new 动态分配的，需要手动使用 delete删除
+
+    return 0;
+}
+ 
+运行结果：
+
+Constructor method is invoked!
+n = 1
+Constructor method is invoked!
+n = 2
+Constructor method is invoked!
+n = 3
+
+分析： 
+1）第一种方法和第二种方法写法略有差异，但本质上是一样的。
+
+2）一个由C/C++编译的程序占用的内存分为以下四个部分： 
+a.栈区（stack）–由编译器自动分配释放，存放函数的参数值，局部变量的值等。 
+b.堆区（heap）–由程序员分配释放。若程序员不释放，程序结束时可能由OS回收。 
+  堆区的大小要远远大于栈区。 
+c.全局区（静态区）（static）–全局变量和静态变量的存储是放在一块的。 
+  里面细分有一个常量区，字符串常量和其他常量也存放在此。 
+  该区域是在程序结束后由操作系统释放。 
+d.程序代码区–存放函数体的二进制代码。 也是由操作系统进行管理的。
+
+3）a1和a2，都是局部变量，放在栈里。 
+指针a3本身放在栈区，但是它指向的对象，即new A()，放在堆里。 
+用 malloc 或 new 出来的对象，都是放在堆里。 
+cout << a3，这样得到的地址是指针a3所指的对象的存储地址，在堆里。 
+cout << &a3，这样得到的地址，是指针a3本身存储的地址，在栈里。 
+
+4）new出来的对象，使用完之后，要用delete语句来释放内存。
+
+
+```
+
+
+
+## 析构函数 妥善处理 善后工作 遛狗---清扫狗屎
+```cpp
+析构函数(destructor) 与构造函数相反，当对象结束其生命周期时（例如对象所在的函数已调用完毕），系统自动执行析构函数。
+析构函数往往用来做“清理善后” 的工作（例如在建立对象时用new开辟了一片内存空间，delete会自动调用析构函数后释放内存）。
+
+析构函数名也应与类名相同，只是在函数名前面加一个位取反符~，例如~A( )。以区别于构造函数。 
+与构造函数一样，析构函数不能有返回值。
+不同的是，析构函数，也不能带参数，并且一个类只能有一个析构函数。
+
+如果用户没有编写析构函数，编译系统会自动生成一个缺省的析构函数。 
+许多简单的类中没有使用用显式的析构函数。
+
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+    A()
+    {
+        cout << "Constructor method is invoked!" << endl;   
+    }
+
+    ~A() //析构函数名也应与类名相同，只是在函数名前面加一个位取反符~
+    {
+        cout << "Deconstructor method is invoked!" << endl;
+    }
+
+    void sayHi()
+    {
+        cout << "Hi!" << endl;
+    }
+};
+
+int main()
+{   
+    A *a = new A(); //动态分配一个类实例对象
+    a->sayHi();
+    delete a; // 清空内存，会调用 A类的 析构函数
+
+    return 0;
+}
+
+运行结果：
+
+Constructor method is invoked!
+Hi!
+Deconstructor method is invoked!
+
+```
+
+
+
+
+## 标准库vector类  动态大小的数组
+```cpp
+vector(向量)是 C++中的一种数据结构，也是一个类。
+它相当于一个动态的数组，当程序员无法知道自己需要的数组的规模多大时，
+用其来解决问题可以达到最大节约空间的目的。
+
+一、定义和初始化
+  vector v1; // T为类型名，比如int, float, string等 
+  vector v2(v1); // 将v1赋值给v2 
+  vector v3(n,i); // v3中含n个值为i的元素
+
+二、操作
+  v.empty(); // 判断v是否为空 
+  v.size(); // 返回v的长度 
+  v.begin(); // 返回v的第一个元素 
+  v.end(); // 返回v最后一个元素的下一个元素的值(指向一个不存在的值) 
+  v.push_back(a); //在v的最后添加元素a(a必须与v的类型一致)
+
+三、迭代器(iterator)
+  迭代器相当于指针，用来储存vector中元素的位置，即下标。
+  vector<T>::iteartor iter = v.begin();   //iter指向v第一个元素
+  vector<T>::iteartor iter = v.end();     //iter指向v最后一个元素的下一个元素，这个元素不存在，通常用作循环结束的标志
+  *iter                                   //*iter指向的元素的值,可对其进行赋值
+  iter++                                  //iter指向v下一个元素
+  
+  常见用法，变量数组元素: 
+  for(vector::iterator iter = v.begin(); iter != v.end(); ++iter) 
+  { 
+  }
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    vector<int> v;
+    v.push_back(1); // [1]
+    v.push_back(2); // [1,2]
+    v.push_back(3); // [1,2,3]
+
+    cout << "Size of v is: " << v.size() << endl;
+    // 遍历数组元素
+    for(vector<int>::iterator iter = v.begin(); iter != v.end(); iter++)
+    {
+        cout << *iter << ' ';   
+    }
+    cout << endl << endl;
+
+    vector<float> v2(5, 3.33); // 5个 3.33
+    cout << "Size of v2 is: " << v2.size() << endl;
+    for(vector<float>::iterator iter = v2.begin(); iter != v2.end(); iter++)
+    {
+        cout << *iter << ' ';   
+    }
+
+    return 0;
+}
+
+
+运行结果：
+
+Size of v is 3
+1 2 3
+
+Size of v2 is 5
+3.33 3.33 3.33 3.33 3.33
+
+
+
+```
+
+
+
+
+## 函数模板
+```cpp
+https://blog.csdn.net/haishu_zheng/article/details/80664515
+```
+
+
+
+
+## 内联函数
+```cpp
+https://blog.csdn.net/haishu_zheng/article/details/80664522
+```
+
+
+## 命名空间
+```cpp
+https://blog.csdn.net/haishu_zheng/article/details/80679470
+```
+
+
+
+
+## cin与scanf，cout与printf的效率比较
+```cpp
+https://blog.csdn.net/haishu_zheng/article/details/80679481
+
+结论：
+1）scanf/printf需要格式化符号%d, %f, %c之类的，这是不如cin/cout方便的地方 
+2）cout在控制小数位输出时，很不方便。需要如此操作
+
+#include<iomanip>
+cout << fixed << setprecision(5) << endl;   // 输出5位小数
+
+3）对于某些优化过cin和cout的编译器（比如G++）而言，cin/cout的运行效率比scanf/printf高。 
+   但是对于没做过优化的编译器，则是scanf/printf的效率大大高于cin/cout。
+   互联网上能搜到的文章，几乎都是这种情况。
+   这与本篇的实验结果恰好相反。 
+
+4）对于非算法比赛而言，用 cin/cout 或 scanf/printf 无所谓。 
+5）但是对于算法比赛而言，因为数据量大，经常会导致超时(TLE–Time limit exceeded)。
+   此时可统一使用scanf/printf，
+   或者使用加了ios::sync_with_stdio(false); cin.tie(0)的cin/cout。
+
+
+```
+
+
+## 实现简易计算器
+```cpp
+https://blog.csdn.net/haishu_zheng/article/details/84838509
+```
+
+## 运算符重载
+```cpp
+https://blog.csdn.net/haishu_zheng/article/details/86188467
 ```
 
 
