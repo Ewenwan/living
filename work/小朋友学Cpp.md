@@ -7,6 +7,9 @@
 
 [c语言教程](https://github.com/Ewenwan/ShiYanLou/tree/master/learn_c)
 
+[在线C++/C/python编译器](https://c.runoob.com/compile/12)
+
+# C语言基础==========================
 # 第一章，与 计算机小朋友开始沟通
     欧拉同学---素数----2147483647---17221----数学英雄---
               素数-----只能被1和其本身整除的数
@@ -479,6 +482,26 @@ printf("1+2+,...,+100 = %d",sum);
 // 打印九九乘法表======
 
 ````
+
+
+
+# C++语言==========================
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   cout << "Hello World\n";
+   cout << "小明，你好";
+   return 0;
+}
+
+```
+
+
+
 
 
 
