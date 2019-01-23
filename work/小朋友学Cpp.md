@@ -896,8 +896,319 @@ C++：狗.吃屎()
 ```
 
 
+## 类与对象
+```cpp
+一）类与对象
+  类是由我们根据客观事物抽象而成，形成一类事物，然后用类去定义对象，形成这类事物的具体个体。
+  比如小狗是一个类，你家的“旺财”则是小狗一个具体的对象。
+二）属性与方法
+  一般把类的数据成员称为类的属性,把类的函数成员称为方法。 
+  比如小狗这个类吧，它的属性有身高、体长、体重、名字、年龄、性别等，它的方法有吃，走，跑，呼吸，吠等。 
+  从这里也可以看出，属性都是静态的，而方法都是动作。
+
+#include <iostream>
+using namespace std;
+
+class Dog
+{
+public: // public表示公有的，在类的外部可以访问。main()函数就属于类的外部。
+  // public: 可以被 类自己、外部、继承者(孩子)、朋友等其他所有 访问
+  // protected: 保护类型，可以被自己、继承者(孩子)以及朋友访问，主要是实现继承
+  // private: 私有类型，可以被自己、朋友(同辈)访问，实现封装
+  // class 默认 为 private属性
+  // struct 默认为 public属性
+    // 属性===特性===特点===特征
+    string name;    // 名字 
+    int age;        // 年龄 
+    int sex;        // 性别，可以定义为，1表示公，0表示母 
+    float height;   // 身高 
+    float length;   // 体长 
+    float weight;   // 体重 
+    // 吃=====
+    void eat()
+    {
+        cout << "eating..." << endl;
+    }
+    // 走======
+    void walk()
+    {
+        cout << "walking..." << endl;
+    }
+    // 跑=====
+    void run()
+    {
+        cout << "running..." << endl; 
+    }
+    // 呼吸=====
+    void breathe()
+    {
+        cout << "breathing..." << endl;
+    }
+    // 犬吠=====
+    void bark()
+    {
+        cout << "wang! wang!" << endl;
+    }
+};  // 在类定义结尾处的}后面需要加分号，这是语法要求。否则编程出错。
+
+int main()
+{
+    Dog dog; // 创建类实例 对象 声明一个类型为Dog的对象dog
+    // Dog mydog;
+    dog.name = "Wang Cai";// 起名字,给对象设置属性
+    dog.age = 3;// 3岁
+    dog.run();  // 遛狗，狗跑起来,调用对象的方法
+    dog.bark(); // 见到其它狗，犬吠
+
+    return 0;
+}
+
+运行结果：
+
+running...
+wang! wang!
+
+```
+
+
+## 类构造函数
+```cpp
+构造函数，作用是完成对象的初始化工作。 
+可类比于：int a = 1;这里是给变量a赋初值。
+构造函数是一种特殊的函数，首先构造函数名与类名是完全一致的，其次构造函数没有类型。
+构造函数可以不带参数，也可以带参数。
+
+#include <iostream>
+using namespace std;
+
+class Dog
+{
+public:
+    // 类 属性 名字，类内参数，命名时，通常在前面+ m_
+    string m_name;
+    
+// 构造函数是在生成对象时被调用的，并且不需要显示调用=====
+
+    // 无参 构造函数 
+    Dog()
+    {
+        cout << "Dog's constructor!" << endl;
+    }
+
+    // 有参 构造函数 
+    Dog(string Name)// 实例化对象 时 直接传入 类的一些属性(这里为狗的名字)
+    {
+        m_name = Name;
+        cout << "Dog's constructor with name!" << endl;
+    }
+    
+    // 方法: 狗跑
+    void run()
+    {
+        cout << m_name << " is running..." << endl;
+    }
+};
+
+int main()
+{
+    Dog dog1;// 无参构造函数
+    dog1.m_name = "Wang Cai";// 旺财
+    dog1.run();
+
+    Dog dog2("Xiao Bai");// 小白 黑豆 桂花
+    dog2.run();
+
+    return 0;
+}
 
 
 
+```
+
+## this指针 我就是我 不一样的自我 酸酸甜甜就是我
+```cpp
+
+```
+
+
+## 
+```cpp
+
+```
+
+
+
+## 
+```cpp
+
+```
+
+
+## 
+```cpp
+
+```
+
+
+
+## 
+```cpp
+
+```
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+## 
+```cpp
+
+```
+
+
+
+## 
+```cpp
+
+```
+
+
+
+## 
+```cpp
+
+```
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
+
+
+
+
+## 
+```cpp
+
+```
 
 
