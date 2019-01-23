@@ -487,15 +487,20 @@ printf("1+2+,...,+100 = %d",sum);
 
 # C++语言==========================
 
+## Hello World
 ```cpp
-#include <iostream>
-using namespace std;
-
-int main()
+#include <iostream> // 定义了一些头文件，这些头文件包含了程序中必需的或有用的信息
+using namespace std;// 告诉编译器使用 std 命名空间, standard 标准库，类似不同的班级
+                    // 可以防止不同的人 有相同的名字，避免命名发生冲突
+                    // 5年级4班 的 李小明 同学
+                    // 6年级3班 也有一个 李小明 同学
+                    // 可以使用前面 所属 班级 来区别他们
+ 
+int main() // 是主函数，程序从这里开始执行。
 {
-   cout << "Hello World\n";
-   cout << "小明，你好";
-   return 0;
+   cout << "Hello World\n"; // 会在屏幕上显示消息 “Hello World”。 \n 换行打印
+   cout << "小明，你好";     // 显示中文
+   return 0;                //  终止 main( )函数，并向调用进程返回值 0。
 }
 
 ```
