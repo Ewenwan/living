@@ -104,6 +104,7 @@
 
 [SIGIA_4P学习 AIpython学习](https://github.com/Ewenwan/ShiYanLou/blob/master/learn_python/SIGIA_4P%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95.md)
 
+[小朋友学Python](https://blog.csdn.net/haishu_zheng/article/category/7458986/2)
 
 [think python 思考 Python 像计算机科学家一样思考 1.1.22](https://github.com/wolfpython/thinkpython/blob/master/thinkpython/tex-zh/book.pdf)
 
