@@ -1021,12 +1021,66 @@ int main()
     return 0;
 }
 
-
-
 ```
 
 ## this指针 我就是我 不一样的自我 酸酸甜甜就是我
 ```cpp
+this指针是一个隐含于类中的特殊指针，指向对象本身。
+   也就是说对象一旦被创建，this指针也就存在了。 
+就好比你的名字叫做 小明，别人说你的时候用的是 小明，但是你说你自己的时候，用的是“我”。 
+这个“我”，在C++和Java中，是用 this 来表示的。
+而在Python和Objective-C（苹果的开发语言）中，则用 self 来表示。
+
+#include <iostream>
+using namespace std;
+
+class Dog
+{
+private:
+    string name;
+
+public:
+    // 有参构造函数
+    Dog(string name)
+    {
+        this->name = name; // 为类属性赋值
+        printf("%p\n", &this->name);// 类属性 变量  地址
+        printf("%p\n", &name);// 构造函数 形参 地址
+        cout << "Constructor method with name!" << endl;
+        
+        // 打印 本类对象 的地址
+        printf("Memory address of this: %p\n", this);// this为 指针地址
+    }
+
+    void run()
+    {
+        cout << name << " is running!" << endl;
+        printf("%p\n", &name); // 这里的 name为 类的属性变量 
+    }
+
+};
+
+int main() 
+{
+    Dog dog("Wang Cai");
+    dog.run();
+    
+    printf("Memory address of dog: %p\n", &dog); 
+    
+    return 0;   
+}
+
+运行结果：
+
+000000000022fe20     // 类属性 name 的地址
+000000000022fe30     // 构造函数形参 name的地址，中间变量，临时存在
+Constructor method with name!
+Memory address of this: 000000000022fe4f // 类 this 指针的值，就是类实例对象的地址
+Wang Cai is running!
+000000000022fe20     // 类属性 name 的地址
+Memory address of dog: 000000000022fe4f  // 在类外部运行的对象的内存地址，与类内部运行的this的内存地址，完全一样。 
+
+// 这也印证了上面说的，别人口中的小明 与 小明自己口中的“我”，就是同一个人。
 
 ```
 
