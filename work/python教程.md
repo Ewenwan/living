@@ -95,7 +95,7 @@
         re (partial)
     除此之外，如果想运行其他的库，也可以下载安装PC客户端“海龟编辑器”，本地运行Python3！
  
-[编程猫 模块简介](https://github.com/Ewenwan/kitten-docs/blob/master/book/SUMMARY.md)
+[编程猫 模块简介 积木实验室 编程小技巧 ](https://github.com/Ewenwan/kitten-docs/blob/master/book/SUMMARY.md)
 
 
 ## 高级 代码编程
