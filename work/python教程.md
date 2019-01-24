@@ -108,6 +108,8 @@
 
 [think python 思考 Python 像计算机科学家一样思考 1.1.22](https://github.com/wolfpython/thinkpython/blob/master/thinkpython/tex-zh/book.pdf)
 
+[开智学堂.Python入门班 第二期](https://github.com/AIHackers/OMOOC2py)
+
 > 什么是程序?
 
     程序就是指令集合，这些指令说明了如何执行计算。
