@@ -78,7 +78,8 @@
 
 ## 编程猫 可视化python编程
 
-    编程猫在线体验地址：  https://wood.codemao.cn/
+    编程猫在线体验地址：  https://wood.codemao.cn/   
+                       图形化动画编程  https://ide.codemao.cn/
     本地编辑器客户端下载：https://python.codemao.cn/
     
     支持在线运行的库包括：
