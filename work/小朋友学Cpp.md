@@ -10,6 +10,9 @@
 [在线C++/C/python编译器](https://c.runoob.com/compile/12)
 
 # C语言基础==========================
+
+[C语言实验指导与习题解答](https://github.com/Baisha-Geek/Curriculum-Design/tree/master/c-programing-homework/%E3%80%8AC%E8%AF%AD%E8%A8%80%E5%AE%9E%E9%AA%8C%E6%8C%87%E5%AF%BC%E4%B8%8E%E4%B9%A0%E9%A2%98%E8%A7%A3%E7%AD%94%E3%80%8B%E7%9A%84%E7%A8%8B%E5%BA%8F)
+
 # 第一章，与 计算机小朋友开始沟通
     欧拉同学---素数----2147483647---17221----数学英雄---
               素数-----只能被1和其本身整除的数
@@ -684,7 +687,158 @@ int main()
     return 0;
 }
 
-     
+   
+   
+// 鸡腿同笼问题=================
+#include<stdio.h>
+main()
+{
+	int h, f, x, y;
+	printf("鸡兔的总数，鸡兔脚总数:");
+	scanf_s("%d%d", &h, &f);
+	if (h> 0 && f> 0)
+	{
+		x = (4 * h - f) / 2;
+		y = (f - 2 * h) / 2;
+		printf("鸡:%d   兔:%d", x, y);
+	}
+	else
+		printf("输入错误!\n");
+}
+ 
+
+// 箱子形状======
+#include<stdio.h>
+int main()
+{
+	int l, w, h;
+	printf("请输入箱子的长、宽、高：\n");
+	scanf("%d%d%d", &l, &w, &h);
+	if (l == w && w==h && l==h)
+		printf("该箱子是正方形\n");
+	else 
+	    printf("该箱子是长方形\n");
+	return 0;
+}
+
+
+// 年月日 计算=================
+ #include<stdio.h>
+int main()
+{
+	int year,month,days;
+	printf("Please enter year and month:\n");
+	scanf("%d%d",&year,&month);
+	switch (month)
+	{
+		case 2:
+			if((year%4==0 && year%100!=0) || year%400==0)
+			   days=29;
+			else
+			   days=28;
+		    break;
+	    case 1:
+	    	days=31;
+	    	break;
+	    case 3:
+	    	days=31;
+	    	break;
+	    case 4:
+	    	days=30;
+	    	break;
+	    case 5:
+	    	days=31;
+	    	break;
+	    case 6:
+	    	days=30;
+	    	break;
+	    case 7:
+	    	days=31;
+	    	break;
+	    case 8:
+	    	days=31;
+	    	break;
+	    case 9:
+	    	days=30;
+	    	break;
+	    case 10:
+	    	days=31;
+	    	break;
+		case 11:
+	    	days=30;
+	    	break;
+		case 12:
+	    	days=31;
+	    	break;    
+	}
+	printf("%d年%d月%d日",year,month,days);
+	return 0;
+}
+
+
+// 小卖铺====当小老板======================
+#include<stdio.h>
+int main()
+{
+	int x,n,y;
+	float sume=0.0;
+	printf("请选择：1.日用品      2.文具         3.食品\n");
+	scanf("%d",&x);
+	switch(x)
+	{
+		case 1:
+			printf("请选择：1.牙刷（3.5元/支）  2.牙膏（6.2元/支）\n");
+			printf("        3.肥皂（2元/块）    4.毛巾（8.6元/条）\n");
+			scanf("%d",&y);
+			printf("数量？"); 
+			scanf("%d",&n);
+			switch(y)
+			{
+				case 1: sume=n*3.5; break;
+				case 2: sume=n*6.2; break;
+				case 3: sume=n*2;   break;
+				case 4: sume=n*8.6;	break;
+			 } 
+			 break;
+		case 2:
+			printf("请选择：1.笔（3元/支）         2.笔记本（1.2元/个）\n");
+			printf("        3.文件夹（12元/个）    4.文具盒（8.6元/个）\n");
+			scanf("%d",&y);
+			printf("数量？");
+			scanf("%d",&n);
+			switch(y)
+			{
+				case 1: sume=n*3;   break;
+				case 2: sume=n*1.2; break;
+				case 3: sume=n*12;  break;
+				case 4:	sume=n*8.6; break;
+			 } 
+			 break;
+ 	    case 3:
+			printf("请选择：1.白糖（3.6元/包）  2.盐（1元/包）\n");
+			printf("        3.饼（2元/个）      4.方便面（3.6元/条）\n");
+			scanf("%d",&y);
+			printf("数量？");
+			scanf("%d",&n);
+			switch(y)
+			{
+				case 1: sume=n*3.6; break;
+				case 2: sume=n*1;   break;
+				case 3: sume=n*2;   break;
+				case 4: sume=n*3.6; break;
+			 } 
+			 break;
+	} 
+	printf("总计：%.2f 元\n",sume);
+	return 0; 
+ } 
+
+
+
+
+
+
+
 ```
 
 
