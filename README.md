@@ -2,6 +2,7 @@
 
 [周知集锦 编程 前端 后端 计算机 大数据 游戏 数据库 娱乐 商业 工作 ](https://github.com/Ewenwan/awesome)
 
+[How To Ask Questions The Smart Way 《提问的智慧》中文版](https://github.com/Ewenwan/How-To-Ask-Questions-The-Smart-Way)
 
 # 1. 自己 
 
