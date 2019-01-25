@@ -90,6 +90,7 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 
 
 # 3. 工作
+[「知识付费套利」项目 ](https://github.com/Ewenwan/KPA)
 
 ## A. 上司同事处事
 
