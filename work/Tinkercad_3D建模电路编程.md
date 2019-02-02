@@ -1,4 +1,4 @@
-# Tinkecad 3D建模编程
+# Tinkecad 3D建模电路编程
 
 [官方主页](https://www.tinkercad.com/)
 
