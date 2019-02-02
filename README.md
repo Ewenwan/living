@@ -25,6 +25,9 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 [各种专业书籍源码](https://github.com/PacktPublishing)
 
 [专业书籍 中文 源码在线 教程 !!!](https://www.ctolib.com/python/docs/null.html)
+
+[清华大学计算机系课程攻略](https://github.com/Trinkle23897/thu-cst-cracker)
+
 ### 科学
 [1 卫报](https://www.theguardian.com/science)
 [2 史密森杂志](https://www.si.edu/)
