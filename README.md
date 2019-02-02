@@ -28,6 +28,8 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 
 [清华大学计算机系课程攻略](https://github.com/Trinkle23897/thu-cst-cracker)
 
+[浙江大学课程攻略共享计划](https://github.com/QSCTech/zju-icicles)
+
 ### 科学
 [1 卫报](https://www.theguardian.com/science)
 [2 史密森杂志](https://www.si.edu/)
