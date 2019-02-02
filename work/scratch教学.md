@@ -1,4 +1,6 @@
 # scratch教学
+[scratch 示例](https://github.com/wall-i-kidscode/kids-code)
+
     第1课 认识新朋友
     第2课 校园一角
     第3课 机器人跳舞
