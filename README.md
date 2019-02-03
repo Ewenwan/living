@@ -30,6 +30,9 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 
 [浙江大学课程攻略共享计划](https://github.com/QSCTech/zju-icicles)
 
+
+[《如何使用 LaTeX 排版论文》讲稿](https://github.com/tuna/thulib-latex-talk)
+
 ### 科学
 [1 卫报](https://www.theguardian.com/science)
 [2 史密森杂志](https://www.si.edu/)
