@@ -9,6 +9,9 @@
 
 [全国青少年信息学奥林匹克竞赛  官网](http://www.noi.cn/articles.html?type=6)
 
+[赛题](https://github.com/imilyx/hexo/tree/master/source/_posts)
+
+
     NOIP：全国青少年信息学奥林匹克联赛(National Olympiad in Informatics in Provinces简称NOIP)自1995年至今。
           每年由中国计算机学会统一组织。 NOIP在 同一时间、不同地点以各省市为单位由特派员组织。
           全国统一大纲、统一试卷。初、高中或其他中等专业学校的学生可报名参加联赛。
