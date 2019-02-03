@@ -3,6 +3,8 @@
 
 [信息学竞赛 培训资料](https://github.com/Ewenwan/OI)
 
+[NOIP题解](https://github.com/Ewenwan/OJ-solutions)
+
 [全国青少年信息学奥林匹克竞赛  官网](http://www.noi.cn/articles.html?type=6)
 
     NOIP：全国青少年信息学奥林匹克联赛(National Olympiad in Informatics in Provinces简称NOIP)自1995年至今。
