@@ -6,6 +6,9 @@
 
 [How To Ask Questions The Smart Way 《提问的智慧》中文版](https://github.com/Ewenwan/How-To-Ask-Questions-The-Smart-Way)
 
+[一些不错英文资料的中文翻译](https://github.com/oldratlee/translations/blob/master/how-to-ask-questions-the-smart-way/README.md)
+
+
 # 1. 自己 
 
 ## A. 技能习得
