@@ -8,6 +8,7 @@
 
 [一些不错英文资料的中文翻译](https://github.com/oldratlee/translations/blob/master/how-to-ask-questions-the-smart-way/README.md)
 
+[大牛的-终身学习-学习记录：计算机技术、产品、营销、经济投资](https://github.com/Ewenwan/lifelong-learning)
 
 # 1. 自己 
 
