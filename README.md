@@ -12,6 +12,7 @@
 
 [一些有用的书籍important books](https://github.com/gs1293/books)
 
+[编程&思考等书籍](https://github.com/yiminyangguang520/sharevip.org/tree/master/source/_posts)
 
 # 1. 自己 
 
@@ -36,7 +37,6 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 [清华大学计算机系课程攻略](https://github.com/Trinkle23897/thu-cst-cracker)
 
 [浙江大学课程攻略共享计划](https://github.com/QSCTech/zju-icicles)
-
 
 [《如何使用 LaTeX 排版论文》讲稿](https://github.com/tuna/thulib-latex-talk)
 
