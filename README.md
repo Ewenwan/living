@@ -16,6 +16,8 @@
 
 [编程&思考等书籍](https://github.com/yiminyangguang520/sharevip.org/tree/master/source/_posts)
 
+[集体智慧编程 python实现](https://github.com/Ewenwan/Programming-Collective-Intelligence-Source-Code)
+
 # 1. 自己 
 
 ## A. 技能习得
