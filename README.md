@@ -2,6 +2,8 @@
 
 爱 健康 财富 是人生值得追求的东西！人生不过是一段体验。我们都是时间的囚徒，活在当下。有趣！有料！
 
+[微盘资源下载](http://vdisk.weibo.com/share/hot)
+
 [周知集锦 编程 前端 后端 计算机 大数据 游戏 数据库 娱乐 商业 工作 ](https://github.com/Ewenwan/awesome)
 
 [How To Ask Questions The Smart Way 《提问的智慧》中文版](https://github.com/Ewenwan/How-To-Ask-Questions-The-Smart-Way)
