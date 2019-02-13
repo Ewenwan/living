@@ -16,7 +16,7 @@
 
 [编程&思考等书籍](https://github.com/yiminyangguang520/sharevip.org/tree/master/source/_posts)
 
-[集体智慧编程 python实现](https://github.com/Ewenwan/Programming-Collective-Intelligence-Source-Code)
+[集体智慧编程 python实现 收集并分析用户的数据和反馈信息，以便创造新的用户价值和商业价值](https://github.com/Ewenwan/Programming-Collective-Intelligence-Source-Code)
 
 # 1. 自己 
 
