@@ -77,6 +77,7 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 ## D. 社交技能
 
 ## E. 恋爱能力
+![](https://avatars0.githubusercontent.com/u/29752783?s=400&v=4)
 
 ## F. 个人投资
 
