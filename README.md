@@ -20,6 +20,8 @@
 
 [集体智慧编程 python实现 收集并分析用户的数据和反馈信息，以便创造新的用户价值和商业价值](https://github.com/Ewenwan/Programming-Collective-Intelligence-Source-Code)
 
+[可以看到github最新的趋势库和开发者](https://github.com/trending)
+
 # 1. 自己 
 
 ## A. 技能习得
