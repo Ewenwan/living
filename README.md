@@ -22,6 +22,7 @@
 
 [可以看到github最新的趋势库和开发者](https://github.com/trending)
 
+
 # 1. 自己 
 
 ## A. 技能习得
@@ -82,6 +83,11 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 ![](https://avatars0.githubusercontent.com/u/29752783?s=400&v=4)
 
 ## F. 个人投资
+    股票、基金、保险等
+    
+### 价值投资
+
+### 技术投资
 
 ## G. 个人形象
 
