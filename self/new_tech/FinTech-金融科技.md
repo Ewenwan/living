@@ -136,3 +136,34 @@
 [Why the crowd likes seeking alpha, but wall street not so much](http://fleishmanhillard.com/2014/07/true/why-the-crowd-likes-seeking-alpha-but-wall-street-not-so-much/)  
 [TradeView](https://www.tradingview.com/)
 [Thinknum](https://www.thinknum.com/about)
+
+
+## 金融终端
+
+### 万德Wind
+&emsp;&emsp;覆盖全球金融市场的数据与信息，内容包括股票、债券、期货、外汇、基金、指数、权证、宏观行业等多项品种。
+
+&emsp;&emsp;股票：覆盖沪深、香港、台湾、NYSE、NASDAQ、SGX、LSE等上市股票实时行情基本资料、IPO、再融资、粉红、公司公告、盈利预测等数据应有尽有。
+
+&emsp;&emsp;债券：横跨债券、资金、国债期货、票据、资产证券化、可转债、利率互换、债券指数、海外点心债等各品种。新闻研报、最热券、计算器、统计报表、多曲线分析等全方位支持。
+
+&emsp;&emsp;商品：提供国内外14家主要商品交易所行情，支持跨品种、跨市场套利监控，6中强大分析工具，及时更新大宗商品数据库基本面数据。
+
+&emsp;&emsp;外汇：提供人民币外汇、离岸人民币、G20货币的即期、掉期等产品的实时及历史行情。直连外汇交易中心，提供境外交易商第一手实况交投行情。
+
+&emsp;&emsp;基金：涵盖公募、私募、券商投资、银行理财、信托、保险等品种数据和资讯，基于现代组合理论深度分析数据。
+
+&emsp;&emsp;指数：涵盖中国及全球主流市场相关指数的实时行情，提供回报风险，估值预测，成份权重等指数分析数据，支持用户自定义指数计算。
+
+&emsp;&emsp;投资组合：支持全品种资产管理，提供丰富强大的组合监控与分析功能，实时动态监控组合盈亏与风险指标，图表化直观展示让投资管理得心应手。
+
+&emsp;&emsp;宏观行业：超过一百万个指标，2千个模板。覆盖全球200多个国家及地区、中国上千个市州盟县。
+
+&emsp;&emsp;新闻与研究报告：实时跟踪180+个财经媒体、200+个行业网站，7*24小时更新。中国近五十家证券或行业研究机构的研报发布平台。
+
+&emsp;&emsp;Excel插件：强大的Excel数据链接功能，方便用户动态获取实时行情、财务数据、宏观行业等数据，构建各种灵活的分析模板。支持VBA，Matlab，R，Python等多语言平台函数接口，让Wind数据与您的投研系统无缝链接。
+
+&emsp;&emsp;金融社区：及时通讯工具（iwind messenger），通讯安全、性能稳定、操作便捷、金融性强。包括电话、视频、在线会议解决方案。
+
+### 参考资料
+[目前金融终端机除了彭博，路透，道琼斯还有哪些可以选择](https://www.zhihu.com/question/19632351?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title)
