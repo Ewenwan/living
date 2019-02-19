@@ -1,4 +1,22 @@
 ## FinTech-金融科技
+[参考](https://github.com/52binge/52binge.blog.source/blob/39352d659f77ab8f70266c4bb93ec5cc2e092909/_posts/data-science/internet-finance-1.md)
+
+    金融的本质 : 资源的最合理化应用
+    互联网技术 : 交易的边界成本趋向“零”
+    金融科技 :   用大数据、云计算等技术实现的资金融通、支付、投资和信息中介服务
+    
+    金融科技企业面临的欺诈⻛险介绍 , 互联网金融 主要是通过互联网平台，连接 出借方 和 借款方
+    
+    我们国家没有覆盖度很全的所有人的征信，虽然有央行，但是还远远不够...
+    授权抓取的用户的数据，(百融、同盾、芝麻信用 等，工作中可能都会对接到这些平台)，
+    这些平台会通过很多渠道收集用户，然后给用户打一些风险标签和欺诈的评分.
+    
+    做金融最大的本质就是在控制风险，在风险可控的情况下获得最大的利润.
+    
+![](https://github.com/52binge/52binge.blog.source/raw/39352d659f77ab8f70266c4bb93ec5cc2e092909/images/datascience/finance-5.jpg)
+
+![](https://github.com/52binge/52binge.blog.source/raw/39352d659f77ab8f70266c4bb93ec5cc2e092909/images/datascience/finance-6.jpg)
+
 
 ### 目录
 
