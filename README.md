@@ -4,6 +4,8 @@
 
 [微盘资源下载](http://vdisk.weibo.com/share/hot)
 
+[博客笔记](https://github.com/Ewenwan/52binge.blog.source)
+
 [各种书籍读书笔记](https://github.com/Ewenwan/book-note)
 
 [周知集锦 编程 前端 后端 计算机 大数据 游戏 数据库 娱乐 商业 工作 ](https://github.com/Ewenwan/awesome)
