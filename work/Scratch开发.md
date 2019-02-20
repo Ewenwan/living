@@ -10,6 +10,10 @@
     
     scratch视频教程 http://www.kidscode.cn/python
     
+    
+[【少儿编程】《零基础入门学习Scratch》（小甲鱼）视频教程](https://www.bilibili.com/video/av28519518/)
+    
+    
 ## 与 python语言的交互
     scratch是一款又麻省理工开发的图形化编程软件，
     这款软件提供了可以使用javascript与scratch交互的接口，
