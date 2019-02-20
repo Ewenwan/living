@@ -3,6 +3,9 @@
 
 [scratch 综合课程](https://github.com/summer2009/learnWithRaspberryPi/tree/master/scratch)
 
+[小天才 练习场](https://fishc.com.cn/forum.php?mod=forumdisplay&fid=337&filter=typeid&typeid=620)
+
+
     第1课 认识新朋友
     第2课 校园一角
     第3课 机器人跳舞
