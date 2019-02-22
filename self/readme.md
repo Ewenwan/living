@@ -7,6 +7,8 @@
 
 [各种书籍 阅历](https://github.com/Ewenwan/books)
 
+[读书笔记](https://github.com/czero1995/czero1995.github.io/tree/2b8bef94127d3bf3c93e31cb3f1fe5820de61d57/_posts/bookLife)
+
 ### 阅读
 ### 专业知识
 
