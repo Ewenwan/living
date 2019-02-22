@@ -1,4 +1,4 @@
-# Quantized Transaction 量化交易
+# Quantized Transaction 量化交易  quantitative trading 量化投资
 
 > 打开量化投资的黑箱
 
