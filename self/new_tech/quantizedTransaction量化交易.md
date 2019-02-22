@@ -1,5 +1,7 @@
 # Quantized Transaction 量化交易  quantitative trading 量化投资
 
+量化投资的主要内容包括：量化选股、量化择时、股指期货套利、商品期货套利、统计套利、期权套利、算法交易、ETF/LOF套利、高频交易等
+
 [入门教程：教你写量化策略，Ricequant量化大课堂](https://www.ricequant.com/community/topic/761/)
 
 [七月算法在线 量化投资 视频教程](https://www.bilibili.com/video/av22022468)
