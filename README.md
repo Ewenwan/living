@@ -86,6 +86,9 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 
 ## F. 个人投资
     股票、基金、保险等
+
+[现代化支付系统 金融信息](https://github.com/fanshuangstrive/payment_system/tree/170968c59896b64a0c533ddb9100c756079e09ba)
+    
     
 ### 价值投资 价值玩家(value player)
     买进价格被低估的股票或商品，并持有一段时间以等待升值。
@@ -93,7 +96,10 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
     
 ### 技术投资 市场玩家(market player 行情玩家)
     根据自己对市场价格走势的知识来交易。
-    
+
+[空头头寸](https://github.com/fanshuangstrive/payment_system/blob/170968c59896b64a0c533ddb9100c756079e09ba/%E8%82%A1%E5%B8%82/%E7%A9%BA%E5%A4%B4%E5%A4%B4%E5%AF%B8%EF%BC%88bear%20coveringShort%20Position.md)
+
+
 <<专业投机原理>>
     
     "赌博例"-----了解规则，才有可能在游戏中获胜
