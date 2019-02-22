@@ -1,5 +1,11 @@
 # Quantized Transaction 量化交易  quantitative trading 量化投资
 
+[入门教程：教你写量化策略，Ricequant量化大课堂](https://www.ricequant.com/community/topic/761/)
+
+[七月算法在线 量化投资 视频教程](https://www.bilibili.com/video/av22022468)
+
+[《量化投资：策略与技术（修订版）》（丁鹏）.pdf](http://vdisk.weibo.com/s/ttHPatjvLk2z)
+
 > 打开量化投资的黑箱
 
 [《打开量化投资的黑箱》读书笔记](https://github.com/fujohnwang/fujohnwang.github.com/blob/b56e2e2f0e68e937aae3d5c798ec4cf4b5e57610/posts/2013-04-06-reading-note-of-inside-the-black-box.markdown)
@@ -513,22 +519,52 @@ Alpha策略不需要依靠对证券组合或大盘的趋势判断，而是追求
   本杰明•格雷厄姆 (Benjamin Graham) , 戴维•多德 (David L. Dodd)  
 
 
-## 国内在线量化平台
+## 国内外 在线量化平台
 
-[BigQuant](https://bigquant.com/) - 你的人工智能量化平台  
+[BigQuant](https://bigquant.com/) - 你的人工智能量化平台可以无门槛地使用机器学习、人工智能开发量化策略，基于python，提供策略自动生成器     
 [镭矿](http://www.raquant.com/) - 基于量化回测平台  
 [果仁网](http://guorn.com/) - 回测量化平台  
 [京东量化](http://quant.jd.com/) - 算法交易和量化回测平台  
 [优矿](http://uqer.io/home/) - 通联量化实验室  
 [Ricequant](http://www.ricequant.com/) - 量化交易平台  
 [况客](http://qutke.com/) - 基于R语言量化回测平台   
+聚宽 - 量化回测平台   
+Factors - 数库多因子量化平台    
+诸葛量化 - 量化交易平台    
+宽狗量化 - 回测量化平台    
 
+python派量化金融社区   http://www.pythonpai.com 
+
+国外量化平台：
+
+     Quantopian 研究、回测、算法众包平台 
+     QuantConnect 研究、回测和投资交易 
+     Quantstart 研究、回测和投资交易、数据科学网站 
+     ASC 研究、交易平台 
+     zulutrade 自动交易平台 
+     quantpedia 研究、策略平台 
+     algotrading101 策略研究平台 
+     investopedia 可以股票、外汇模拟交易的财经网站 
+     Amibroker 提供系统交易工具的一家公司 
+     AlgoTrades 股票、ETF、期货自动交易系统 
+     Numerai 数据工程师众包的一家对冲基金 
+     WealthFront 财富管理平台 
+     Betterment 个人投资平台 
+     TradeLink 量化交易平台 
+     ActiveQuant 基于JavaScript开源交易开发框架 
+ 
+ 
 ## 相关平台
 [掘金量化](http://www.myquant.cn/) - 支持C/C++、C#、MATLAB、Python和R的量化交易平台  
 [DigQuant](http://www.digquant.com.cn/) - 提供基于matlab量化工具  
 [SmartQuant](http://www.smartquant.cn/) - 策略交易平台  
 [OpenQuant](http://github.com/QuantBox/OpenQuant-Esunny) - 基于C#的开源量化回测平台  
 
+## 基于图表的量化交易平台
+ 文华赢智 、TB、金字塔、MultiCharts 中国版 - 程序化交易软件、MT4、TradeStation 
+ Auto-Trader - 基于MATLAB的量化交易平台 
+ BotVS - 首家支持传统期货与股票证券与数字货币的量化平台 
+ 
 ## 开源框架
 
 [Pandas](http://github.com/pandas-dev/pandas) - 数据分析包  
@@ -654,3 +690,92 @@ Barra USE3 handbook
 ----
 [1]银行管存：银行存管是由银行管理资金，平台管理交易，做到资金与交易的分离，使得平台无法直接接触资金，避免客户资金被直接挪用。[查询地址](http://www.p2peye.com/platform/bank/)
 [2]Quant：宽客，设计并实现金融的数学模型（主要采用计算机编程），包括衍生品定价，风险估价或预测市场行为等。
+
+
+
+编程
+
+Python
+
+    安装
+     Anaconda - 推荐通过清华大学镜像 下载安装 
+     Pycharm download 
+     Python Extension Packages for Windows - Christoph Gohlke - Windows用户从这里可以下载许多python库的预编译包 
+ 
+教程
+
+     Python | Codecademy 
+     用 Python 玩转数据 - 南京大学 | Coursera 
+     Google 开源项目风格指南 (中文版) 
+     廖雪峰python教程 
+     Introduction to Data Science in Python - University of Michigan | Coursera 
+     The Python Tutorial 
+     Python for Finance 
+     Algorithmic Thinking - Python 算法思维训练 
+     Python Cookbook 3rd Edition Documentation  
+ 
+库
+
+     Python Extension Packages for Windows 
+     awesome-python: A curated list of awesome Python frameworks, libraries, software and resources 
+     pandas - Python做数据分析的基础 
+     pyql: Cython QuantLib wrappers 
+     ffn - 绩效评估 
+     ta-lib: Python wrapper for TA-Lib (http://ta-lib.org/). - 技术指标 
+     StatsModels: Statistics in Python — statsmodels documentation - 常用统计模型 
+     arch: ARCH models in Python - 时间序列 
+     pyfolio: Portfolio and risk analytics in Python - 组合风险评估 
+     twosigma/flint: A Time Series Library for Apache Spark - Apache Spark上的时间序列库 
+ 
+R 安装
+
+     The Comprehensive R Archive Network - 从国内清华镜像下载安装 
+     RStudio - R的常用开发平台下载 
+ 
+教程
+
+     Free Introduction to R Programming Online Course - datacamp的在线学习 
+     R Programming - 约翰霍普金斯大学 | Coursera 
+     Intro to Computational Finance with R - 用R进行计算金融分析 
+ 
+库
+
+     CRAN Task View: Empirical Finance - CRAN官方的R金融相关包整理 
+     qinwf/awesome-R: A curated list of awesome R packages, frameworks and software. - R包的awesome 
+ 
+C++ 教程
+
+     C++程序设计 - 北京大学 郭炜 
+     基于Linux的C++ - 清华大学 乔林 
+     面向对象程序设计（C++） - 清华大学 徐明星 
+     C++ Design Patterns and Derivatives Pricing - C++设计模式 
+     C++ reference - cppreference.com - 在线文档 
+
+库
+
+     fffaraz/awesome-cpp: A curated list of awesome C/C++ frameworks, libraries, resources, and shiny things. - C++库整理 
+     rigtorp/awesome-modern-cpp: A collection of resources on modern C++ - 现代C++库整理 
+     QuantLib: a free/open-source library for quantitative finance 
+     libtrading/libtrading: Libtrading, an ultra low-latency trading connectivity library for C and C++. 
+    Julia 教程
+     Learning Julia - 官方整理 
+     QUANTITATIVE ECONOMICS with Julia - 经济学诺奖获得者Thomas Sargent教你Julia在量化经济的应用。 
+    库
+     Quantitative Finance in Julia - 多数为正在实现中，感兴趣的可以参与 
+ 
+编程论坛
+
+     Stack Overflow 
+     SegmentFault 
+     Quora 
+     Github 
+     知乎 - 与世界分享你的知识、经验和见解  
+ 
+编程能力在线训练
+
+     Solve Programming Questions | HackerRank - 包含常用语言(C++, Java, Python, Ruby, SQL)和相关计算机应用技术(算法、数据结构、数学、AI、Linux Shell、分布式系统、正则表达式、安全)的教程和挑战。 
+     LeetCode Online Judge - C, C++, Java, Python, C#, JavaScript, Ruby, Bash, MySQL在线编程训练 
+     
+
+
+     
