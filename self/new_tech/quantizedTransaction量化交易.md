@@ -2,6 +2,9 @@
 
 > 打开量化投资的黑箱
 
+[《打开量化投资的黑箱》读书笔记](https://github.com/fujohnwang/fujohnwang.github.com/blob/b56e2e2f0e68e937aae3d5c798ec4cf4b5e57610/posts/2013-04-06-reading-note-of-inside-the-black-box.markdown)
+
+
 * 黑箱:量化交易如何运作
 * 量化交易：人类经过研究后得到的交易策略，然后交付给系统去实施
 * 宽客:赋予量化交易生命的人
@@ -508,3 +511,21 @@ Alpha策略不需要依靠对证券组合或大盘的趋势判断，而是追求
   Security Analysis: Sixth Edition 
 
   本杰明•格雷厄姆 (Benjamin Graham) , 戴维•多德 (David L. Dodd)  
+
+
+## 国内在线量化平台
+
+[BigQuant](https://bigquant.com/) - 你的人工智能量化平台  
+[镭矿](http://www.raquant.com/) - 基于量化回测平台  
+[果仁网](http://guorn.com/) - 回测量化平台  
+[京东量化](http://quant.jd.com/) - 算法交易和量化回测平台  
+[优矿](http://uqer.io/home/) - 通联量化实验室  
+[Ricequant](http://www.ricequant.com/) - 量化交易平台  
+[况客](http://qutke.com/) - 基于R语言量化回测平台   
+
+## 相关平台
+[掘金量化](http://www.myquant.cn/) - 支持C/C++、C#、MATLAB、Python和R的量化交易平台  
+[DigQuant](http://www.digquant.com.cn/) - 提供基于matlab量化工具  
+[SmartQuant](http://www.smartquant.cn/) - 策略交易平台  
+[OpenQuant](http://github.com/QuantBox/OpenQuant-Esunny) - 基于C#的开源量化回测平台  
+
