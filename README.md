@@ -86,6 +86,8 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 
 ## F. 个人投资
     股票、基金、保险等
+    
+[基金产品](https://github.com/zhangjinzhi/Summary/blob/f4ed3ed9d0df70b8abcec43fbf9104770da6894b/nffund/2018.12.1-ETF-ETF%E8%81%94%E6%8E%A5-%E6%8C%87%E6%95%B0%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84.md)
 
 [现代化支付系统 金融信息](https://github.com/fanshuangstrive/payment_system/tree/170968c59896b64a0c533ddb9100c756079e09ba)
     
