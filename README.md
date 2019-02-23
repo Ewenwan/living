@@ -2,6 +2,8 @@
 
 爱 健康 财富 是人生值得追求的东西！人生不过是一段体验。我们都是时间的囚徒，活在当下。有趣！有料！
 
+[读书清单-工程师-人性-艺术等](https://github.com/Ewenwan/reading-notes-1)
+
 [微盘资源下载](http://vdisk.weibo.com/share/hot)
 
 [博客笔记](https://github.com/Ewenwan/52binge.blog.source)
