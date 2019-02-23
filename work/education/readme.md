@@ -1,5 +1,9 @@
 # 教育
+* 1. [儿童故事 ](http://www.robotant.com.cn/resource/story/audio/)
 
+* 2. 唐诗宋词等传统文化
+
+* 3. 
 
 
 ## 教育孩子最著名的12种方法
