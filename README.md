@@ -4,6 +4,8 @@
 
 一个人的命运啊，当然要靠自我奋斗，但是也要考虑到历史的行程---奋斗是加法，趋势是乘法
 
+[iterateself 个人迭代进化](https://github.com/iterateself/iterate_not_used)
+
 [读书清单-工程师-人性-艺术等](https://github.com/Ewenwan/reading-notes-1)
 
 [微盘资源下载](http://vdisk.weibo.com/share/hot)
