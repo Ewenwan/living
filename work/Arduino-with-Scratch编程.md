@@ -12,7 +12,10 @@
     从图形化编程进阶到Arduino的软件-KittenBlock
     下载 https://www.kittenbot.cn/software/
     
+[arduino 各种传感器程序 ](https://github.com/Ewenwan/learn-sensors)
+    
 [基于Arduino与LabVIEW的直流电机转速控制系统](https://github.com/obookcc/openbook9/tree/5401edb562add66e5b77759a2c103f588ea528eb/arduino-labview)
+
 
 ## KittenBlock 图形化 Arduino 编程
 [参考](https://www.arduino.cn/thread-42752-1-1.html)
