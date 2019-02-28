@@ -8,7 +8,9 @@
 
 [读书清单-工程师-人性-艺术等](https://github.com/Ewenwan/reading-notes-1)
 
-[豆瓣 各种 书籍 推荐](https://github.com/Ewenwan/book)
+[豆瓣 各种 书籍 推荐!!!](https://github.com/Ewenwan/book)
+
+[每年获奖电影 -- 电影推荐!!!](https://github.com/Ewenwan/movie)
 
 [微盘资源下载](http://vdisk.weibo.com/share/hot)
 
