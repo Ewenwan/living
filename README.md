@@ -16,6 +16,8 @@
 
 [history-of-today 历史上的今天](https://github.com/gitbook-echo/history-of-today)
 
+[读书笔记,公开课笔记](https://github.com/Ewenwan/Kidult00-BooksCoursesNotes/tree/master/BookNotes)
+
 [微盘资源下载](http://vdisk.weibo.com/share/hot)
 
 [博客笔记](https://github.com/Ewenwan/52binge.blog.source)
