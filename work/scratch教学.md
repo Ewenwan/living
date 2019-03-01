@@ -5,6 +5,7 @@
 
 [小天才 练习场](https://fishc.com.cn/forum.php?mod=forumdisplay&fid=337&filter=typeid&typeid=620)
 
+[思酷趣: 我的少儿 Scratch 趣味编程教学实践 课堂记录等](https://github.com/1766left/SKQ)
 
 孩子们通过这堂课能潜移默化收获到的内容，比编程要多得多:
 
