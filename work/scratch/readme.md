@@ -54,3 +54,9 @@
 
 热带舞曲敲鼓
 ![](https://github.com/Ewenwan/living/blob/master/work/img/music.PNG)
+
+
+ 一个计算不同交通工具到不同星球耗费时间的小程序 https://github.com/onebody/MyScratchProject
+ 
+![](https://github.com/Ewenwan/living/blob/master/work/img/huoxing.PNG)
+
