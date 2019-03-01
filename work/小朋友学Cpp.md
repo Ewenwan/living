@@ -11,6 +11,8 @@
 
 # C语言基础==========================
 
+[C语言精读100例 ！！！！](https://github.com/Ewenwan/72program_C/)
+
 [C语言实验指导与习题解答](https://github.com/Baisha-Geek/Curriculum-Design/tree/master/c-programing-homework/%E3%80%8AC%E8%AF%AD%E8%A8%80%E5%AE%9E%E9%AA%8C%E6%8C%87%E5%AF%BC%E4%B8%8E%E4%B9%A0%E9%A2%98%E8%A7%A3%E7%AD%94%E3%80%8B%E7%9A%84%E7%A8%8B%E5%BA%8F)
 
 [小项目学习 扫雷小游戏 贪吃蛇小游戏 学生成绩管理系统 图书管理系统 小说分析软件](https://github.com/Ewenwan/Curriculum-Design)
