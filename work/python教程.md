@@ -6,7 +6,9 @@
     锯齿符，>>> 
     是提示符, 解释器用它来表明自己已经准备好了，如果你输入 1 + 1, 解释器显示 2。
     Python 脚本的扩展名为.py
-    
+
+[从scratch到python的介绍](https://github.com/yonghuming/Scratch2Python/blob/master/scratch2python.md)
+
 ## Kittenbot下使用Python3编程的教程
 [参考](http://learn.kittenbot.cn/zh_CN/latest/scratch3_python3/index.html)
 
