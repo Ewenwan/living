@@ -4,6 +4,7 @@
     https://github.com/ranaalisaeed/scratchaway
     https://github.com/mallgeier/ScratchFiles
     https://github.com/simonguest/scratch-for-kids
+    https://github.com/feth/Scratch-games
     
     
     
