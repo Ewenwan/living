@@ -18,6 +18,8 @@
 
 [读书笔记,公开课笔记](https://github.com/Ewenwan/Kidult00-BooksCoursesNotes/tree/master/BookNotes)
 
+[一些经典且高质量的技术专业电子书分享](https://github.com/Ewenwan/studyFiles)
+
 [微盘资源下载](http://vdisk.weibo.com/share/hot)
 
 [博客笔记](https://github.com/Ewenwan/52binge.blog.source)
