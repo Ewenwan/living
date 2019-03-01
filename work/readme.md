@@ -14,6 +14,8 @@
 
 [人工智能 AI 互联网创业小本创业 音频](https://www.ximalaya.com/jiaoyu/15231886/)
 
+[创业攻略](https://github.com/iamjoel/company-note)
+
          “AI+行业”简单讲就是在AI技术成熟之前，这个行业、产品从未存在过。
          比如自动驾驶，亚马逊的Echo智能音箱、苹果的Siri语音助手。
          在人工智能技术未突破前，不存在这样的产品。因为AI，创造出了一条全新的产业链。 
