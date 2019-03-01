@@ -28,6 +28,8 @@
 
 [周知集锦 编程 前端 后端 计算机 大数据 游戏 数据库 娱乐 商业 工作 ](https://github.com/Ewenwan/awesome)
 
+[前端编程 创业 增长骇客 运营 装修 生活等资源](https://github.com/iamjoel/projects-nav)
+
 [How To Ask Questions The Smart Way 《提问的智慧》中文版](https://github.com/Ewenwan/How-To-Ask-Questions-The-Smart-Way)
 
 [一些不错英文资料的中文翻译](https://github.com/oldratlee/translations/blob/master/how-to-ask-questions-the-smart-way/README.md)
