@@ -30,3 +30,20 @@
 流星雨 
 ![](https://github.com/Ewenwan/living/blob/master/work/img/fire.PNG)
 
+
+飞机场飞机起飞 海底水母  螃蟹吃鱼  星球大战  https://github.com/fenwii/72program_Scratch
+
+
+飞机场飞机起飞 
+![](https://github.com/Ewenwan/living/blob/master/work/img/plane.PNG)
+
+海底水母  
+![](https://github.com/Ewenwan/living/blob/master/work/img/shuimu.PNG)
+
+螃蟹吃鱼  
+![](https://github.com/Ewenwan/living/blob/master/work/img/fish.PNG)
+
+星球大战 
+![](https://github.com/Ewenwan/living/blob/master/work/img/plant.PNG)
+
+
