@@ -2,6 +2,8 @@
     其他工程：
     https://github.com/ioa-maellak/Scratch4Kids
     https://github.com/ranaalisaeed/scratchaway
+    https://github.com/mallgeier/ScratchFiles
+    https://github.com/simonguest/scratch-for-kids
     
     
     
