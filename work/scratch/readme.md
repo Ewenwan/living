@@ -1,4 +1,13 @@
 # scratch 文件
+    其他工程：
+    https://github.com/ioa-maellak/Scratch4Kids
+    https://github.com/ranaalisaeed/scratchaway
+    
+    
+    
+    
+    
+    
     愤怒的小鸟  贪吃蛇	超级玛丽奥 https://github.com/yst199324/scratch
     
 愤怒的小鸟
