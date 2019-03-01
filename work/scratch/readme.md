@@ -60,3 +60,15 @@
  
 ![](https://github.com/Ewenwan/living/blob/master/work/img/huoxing.PNG)
 
+
+飞翔的小鸟游戏 赛车游戏 圣诞老人游戏  跳舞会 猫捉鸟 https://github.com/kyaune/scratch-for-kids
+
+
+飞翔的小鸟游戏
+![](https://github.com/Ewenwan/living/blob/master/work/img/FlappyBird.PNG)
+
+赛车游戏 
+![](https://github.com/Ewenwan/living/blob/master/work/img/Scar.PNG)
+
+圣诞老人游戏
+![](https://github.com/Ewenwan/living/blob/master/work/img/snowMan.PNG)
