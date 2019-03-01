@@ -47,3 +47,10 @@
 ![](https://github.com/Ewenwan/living/blob/master/work/img/plant.PNG)
 
 
+猴子吃香蕉  热带舞曲敲鼓 https://github.com/hpmomocha/Scratch
+
+猴子吃香蕉 
+![](https://github.com/Ewenwan/living/blob/master/work/img/monkey.PNG)
+
+热带舞曲敲鼓
+![](https://github.com/Ewenwan/living/blob/master/work/img/music.PNG)
