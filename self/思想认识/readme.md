@@ -5,6 +5,8 @@
 
 注：暂时对我来说是基石。不一定具有普适性。
 
+[各学科知识](https://github.com/huangblue/learn/issues)
+
 # 主要内容
 ```
 实事求是，落到实处
