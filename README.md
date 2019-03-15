@@ -4,6 +4,8 @@
 
 一个人的命运啊，当然要靠自我奋斗，但是也要考虑到历史的行程---奋斗是加法，趋势是乘法
 
+[行业 员工 金融 个税 福利薪酬 领导力 财富 会议 报告&工具](https://github.com/Ewenwan/report_gather)
+
 [各种工具 网络 数据 发现需求 竞品分析 产品 指数 了解企业/人 性格测试 自媒体 品牌设计 公司工作工具思维导图 ](https://github.com/Ewenwan/tools)
 
 [iterateself 个人迭代进化](https://github.com/iterateself/iterate_not_used)
