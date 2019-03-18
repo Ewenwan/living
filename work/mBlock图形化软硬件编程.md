@@ -5,6 +5,9 @@ mBlock 是一款面向 STEAM 教育领域的图形化编程学习软件，基于
 
 [官方下载](http://www.mblock.cc/zh-home/?noredirect=zh-CN)
 
+[官方帮助文档](http://www.mblock.cc/doc/zh/part-one-basics/tour-of-the-interface.html#工具栏)
+
+
 ## 软件使用
 ![](http://www.mblock.cc/doc/zh/part-one-basics/2018-11-21-09-36-04.png)
 
