@@ -29,5 +29,7 @@ mBlock 是一款面向 STEAM 教育领域的图形化编程学习软件，基于
 
 作为入门级的STEAM教育机器人，mBot让机器人编程学习和教学变得简单有趣。只需一把螺丝刀，一份入门指南，一节课的时间，孩子就能从零开始，体验动手创造的乐趣，认识各种机器人机械和电子零件，入门学习积木式编程，并锻炼逻辑和设计思维。
 
+[mBot教程](http://education.makeblock.com/zh-hans/resource/?query=81&page=1)
+
 ![](http://www.makeblock.com/wp-content/uploads/2018/08/mbot_%E7%88%86%E7%82%B8%E5%9B%BE_v1.128-2.png)
 
