@@ -67,6 +67,8 @@ G->地理
 B->生物
 I->信竞 等资料 ](https://github.com/Ewenwan/School)
 
+[李笑来--人人都能用英语](https://github.com/Ewenwan/everyone-can-use-english)
+
 [各种专业书籍源码](https://github.com/PacktPublishing)
 
 [专业书籍 中文 源码在线 教程 !!!](https://www.ctolib.com/python/docs/null.html)
