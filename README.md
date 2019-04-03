@@ -102,7 +102,14 @@ I->信竞 等资料 ](https://github.com/Ewenwan/School)
 ### 健身
 ### 垂钓
 ### 野外求生
-### 
+### 钢琴
+[自由钢琴（AutoPiano）是利用HTML5技术开发的在线钢琴应用](https://github.com/Ewenwan/AutoPiano)
+
+[成人学乐理](https://www.cnblogs.com/devymex/p/3385179.html)
+
+[乐理基础](https://www.bilibili.com/video/av12168119/)
+
+
 ## C. 品德养成
 
 [道德楷模与政治教化---戴建业](https://github.com/Ewenwan/living/blob/master/self/%E9%81%93%E5%BE%B7%E6%A5%B7%E6%A8%A1%E4%B8%8E%E6%94%BF%E6%B2%BB%E6%95%99%E5%8C%96.md)
