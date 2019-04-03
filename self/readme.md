@@ -98,10 +98,21 @@
 
 ## B. 兴趣培养
 ### 游泳
+
 ### 健身
+
 ### 垂钓
+
 ### 野外求生
-### 
+
+### 钢琴
+[自由钢琴（AutoPiano）是利用HTML5技术开发的在线钢琴应用](https://github.com/Ewenwan/AutoPiano)
+
+[成人学乐理](https://www.cnblogs.com/devymex/p/3385179.html)
+
+[乐理基础](https://www.bilibili.com/video/av12168119/)
+
+
 ## C. 品德养成
 
 ## D. 社交技能
