@@ -9,6 +9,8 @@
 
 [思酷趣: 我的少儿 Scratch 趣味编程教学实践 课堂记录等](https://github.com/1766left/SKQ)
 
+[少儿编程Scratch3.0教程，初识Scratch](https://blog.csdn.net/weixin_34354945/article/details/87130084)
+
 孩子们通过这堂课能潜移默化收获到的内容，比编程要多得多:
 
 * 画面上人物要动，就需要知道 x/y 坐标轴，还要有正数负数的概念.
