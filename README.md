@@ -6,6 +6,8 @@
 
 我相信这世界上，有些人有些事有些爱，在见到的第一次，就注定要羁绊一生，就注定像一棵树一样，生长在心里，生生世世。
 
+[进化学习](https://www.evolutionarylearn.com/)
+
 [AI算法工程师手册 数学基础 统计学习 深度学习 自然语言处理 工具使用](http://www.huaxiaozhuan.com/)
 
 [行业 员工 金融 个税 福利薪酬 领导力 财富 会议 报告&工具](https://github.com/Ewenwan/report_gather)
